@@ -23,6 +23,14 @@ Untuk menjalankan aplikasi ini, ikuti langkah-langkah berikut:
 2. Kompilasi kode Java menggunakan IDE Java atau alat baris perintah (misalnya, `javac StudentManagementApp.java`).
 3. Jalankan aplikasi dengan perintah `java StudentManagementApp`.
 
+## Memulai
+
+Untuk menjalankan aplikasi ini, ikuti langkah-langkah berikut:
+
+1. Clone atau unduh repositori ke mesin lokal Anda.
+2. Kompilasi kode Java menggunakan IDE Java atau alat baris perintah (misalnya, `javac StudentManagementApp.java`).
+3. Jalankan aplikasi dengan perintah `java StudentManagementApp`.
+
 ## Penggunaan
 
 Setelah aplikasi dijalankan, sebuah jendela akan terbuka dengan komponen-komponen berikut:
@@ -63,3 +71,11 @@ Setelah aplikasi dijalankan, sebuah jendela akan terbuka dengan komponen-kompone
 3. **JButton**: Digunakan untuk memicu tindakan seperti menambah, memperbarui, menghapus, dan menyimpan data.
 4. **JFileChooser**: Membantu pengguna untuk menelusuri dan memilih file gambar yang akan dikaitkan dengan siswa.
 5. **BufferedWriter**: Digunakan untuk menulis data siswa ke file saat menyimpan.
+
+### Metode
+
+- **addStudent()**: Menambahkan siswa baru ke tabel.
+- **updateStudent()**: Memperbarui data siswa yang ada di tabel.
+- **deleteStudent()**: Menghapus siswa yang dipilih dari tabel.
+- **saveToFile()**: Menyimpan data siswa ke file teks.
+- **chooseImage()**: Membuka pemilih file untuk memilih gambar.

@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbbe08ac-130b-470e-9174-8ad58ec99829" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="dbbe08ac-130b-470e-9174-8ad58ec99829" name="Changes" comment="coba">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dafa" />
+        <entry key="$PROJECT_DIR$" value="nusa" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,9 +37,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2qUWH4uBo3CNE4RMn0AlbIaITXU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,9 +48,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.Testing.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "nusa",
+    "git-widget-placeholder": "dafa",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "D:/MAHASISWA/SEMESTER 3/PEMROGRAMAN LANJUT/PRAKTIKUM PEMROGRAMAN LANJUT/TES UAP PEMLAN/src/Main.java"
   }
@@ -47,6 +69,117 @@
       <option name="presentableId" value="Default" />
       <updated>1734717544092</updated>
     </task>
+    <task id="LOCAL-00001" summary="nusantara">
+      <option name="closed" value="true" />
+      <created>1734717968801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734717968801</updated>
+    </task>
+    <task id="LOCAL-00002" summary="nusantara">
+      <option name="closed" value="true" />
+      <created>1734717996754</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734717996754</updated>
+    </task>
+    <task id="LOCAL-00003" summary="dafann">
+      <option name="closed" value="true" />
+      <created>1734718625856</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734718625856</updated>
+    </task>
+    <task id="LOCAL-00004" summary="dafann">
+      <option name="closed" value="true" />
+      <created>1734719896968</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734719896968</updated>
+    </task>
+    <task id="LOCAL-00005" summary="gtambah">
+      <option name="closed" value="true" />
+      <created>1734720005244</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734720005244</updated>
+    </task>
+    <task id="LOCAL-00006" summary="gtambah">
+      <option name="closed" value="true" />
+      <created>1734720117876</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734720117876</updated>
+    </task>
+    <task id="LOCAL-00007" summary="kelas main">
+      <option name="closed" value="true" />
+      <created>1734720250204</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734720250204</updated>
+    </task>
+    <task id="LOCAL-00008" summary="kelas main">
+      <option name="closed" value="true" />
+      <created>1734720381664</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734720381664</updated>
+    </task>
+    <task id="LOCAL-00009" summary="full code">
+      <option name="closed" value="true" />
+      <created>1734720570569</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734720570569</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test">
+      <option name="closed" value="true" />
+      <created>1734720802107</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1734720802107</updated>
+    </task>
+    <task id="LOCAL-00011" summary="coba">
+      <option name="closed" value="true" />
+      <created>1734720972805</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1734720972805</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="nusantara" />
+    <MESSAGE value="Merge pull request #1 from rizqullahnusa22/nusa&#10;&#10;Nusa" />
+    <MESSAGE value="dafann" />
+    <MESSAGE value="gtambah" />
+    <MESSAGE value="kelas main" />
+    <MESSAGE value="full code" />
+    <MESSAGE value="test" />
+    <MESSAGE value="coba" />
+    <option name="LAST_COMMIT_MESSAGE" value="coba" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ManajemenDataSiswa.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

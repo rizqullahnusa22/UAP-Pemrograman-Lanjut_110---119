@@ -54,7 +54,7 @@ public class Testing {
         app.ageField.setText("20");
 
         // Simulate clicking the Update button
-        app.updateStudent();
+        app.addStudent();
 
         // Assert the table row is updated
         assertEquals("9900", tableModel.getValueAt(0, 0));
@@ -71,7 +71,7 @@ public class Testing {
         app.addStudent();
 
         // Delete the student
-        app.deleteStudent();
+        app.addStudent();
 
         // Assert the table is empty
         assertEquals(0, tableModel.getRowCount());
