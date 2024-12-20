@@ -92,7 +92,7 @@ public class ManajemenDataSiswa {
         saveButton.setForeground(Color.WHITE);
 
         addButton.addActionListener(e -> addStudent());
-        updateButton.addActionListener(e -> updateStudent());
+        updateButton.addActionListener(e -> addStudent());
         deleteButton.addActionListener(e -> deleteStudent());
         saveButton.addActionListener(e -> saveToFile());
 
