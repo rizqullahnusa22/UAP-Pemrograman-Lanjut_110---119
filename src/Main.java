@@ -153,3 +153,87 @@ public class ManajemenDataSiswa {
             JOptionPane.showMessageDialog(frame, "terjadi kesalahan : " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
+    public void updateStudent() {
+        try {
+            int selectedRow = table.getSelectedRow();
+            if (selectedRow == -1) {
+                throw new Exception("tidak ada baris yang dipilih");
+            }
+
+            String id = idField.getText().trim();
+            String name = nameField.getText().trim();
+            String ageText = ageField.getText().trim();
+
+            // Check for empty fields
+            if (id.isEmpty() || name.isEmpty() || ageText.isEmpty()) {
+                JOptionPane.showMessageDialog(frame, "semua kolom harus diisi", "Input Error", JOptionPane.ERROR_MESSAGE);
+                return; // Stop further processing
+            }
+
+            // Validate that the age is a valid number
+            int age = Integer.parseInt(ageText);
+
+            // Get updated image path or keep existing one
+            String imagePath = currentImage != null ? currentImage.getAbsolutePath() : tableModel.getValueAt(selectedRow, 3).toString();
+
+            // Update the selected row with the new information
+            tableModel.setValueAt(id, selectedRow, 0);
+            tableModel.setValueAt(name, selectedRow, 1);
+            tableModel.setValueAt(age, selectedRow, 2);
+            tableModel.setValueAt(imagePath, selectedRow, 3);
+            clearFields();
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(frame, "umur harus berupa angka valid!", "Input Error", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(frame, "terjadi kesalahan : " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+
+    public void deleteStudent() {
+        try {
+            int selectedRow = table.getSelectedRow();
+            if (selectedRow == -1) {
+                throw new Exception("tidak ada baris yang dipilih");
+            }
+            tableModel.removeRow(selectedRow);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(frame, "terjadi kesalahan : " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    private void saveToFile() {
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setFileFilter(new javax.swing.filechooser.FileNameExtensionFilter("Text Files", "txt"));
+        int result = fileChooser.showSaveDialog(frame);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File file = fileChooser.getSelectedFile();
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+                writer.write("ID\tName\tAge\tImage\n");
+                // Write each row data into file, including the image path
+                for (int i = 0; i < tableModel.getRowCount(); i++) {
+                    writer.write(tableModel.getValueAt(i, 0) + "\t" +
+                            tableModel.getValueAt(i, 1) + "\t" +
+                            tableModel.getValueAt(i, 2) + "\t" +
+                            tableModel.getValueAt(i, 3) + "\n");
+                }
+                JOptionPane.showMessageDialog(frame, "Data berhasil disimpan!", "Berhasil", JOptionPane.INFORMATION_MESSAGE);
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(frame, "Gagal untuk menyimpan file : " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }
+
+    public void clearFields() {
+        idField.setText("");
+        nameField.setText("");
+        ageField.setText("");
+        imageLabel.setIcon(null);
+        imageLabel.setText("Tidak ada gambar");
+        currentImage = null;
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(ManajemenDataSiswa::new);
+    }
+}
