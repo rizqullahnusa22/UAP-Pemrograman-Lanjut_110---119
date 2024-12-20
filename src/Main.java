@@ -109,3 +109,47 @@ public class ManajemenDataSiswa {
 
         frame.setVisible(true);
     }
+
+    private void chooseImage() {
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setFileFilter(new javax.swing.filechooser.FileNameExtensionFilter("Gambar", "jpg", "png", "jpeg"));
+        int result = fileChooser.showOpenDialog(frame);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            currentImage = fileChooser.getSelectedFile();
+            try {
+                Image img = ImageIO.read(currentImage).getScaledInstance(150, 150, Image.SCALE_SMOOTH);
+                imageLabel.setIcon(new ImageIcon(img));
+                imageLabel.setText(null);
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(frame, "gagal memuat gambar: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }
+
+    public void addStudent() {
+        try {
+            String id = idField.getText().trim();
+            String name = nameField.getText().trim();
+            String ageText = ageField.getText().trim();
+
+            // Check for empty fields
+            if (id.isEmpty() || name.isEmpty() || ageText.isEmpty()) {
+                JOptionPane.showMessageDialog(frame, "Semua Kolom harus diisi", "Input Error", JOptionPane.ERROR_MESSAGE);
+                return; // Stop further processing
+            }
+
+            // Validate that the age is a valid number
+            int age = Integer.parseInt(ageText);
+
+            // Store image path if image is selected, else use "No Image"
+            String imagePath = currentImage != null ? currentImage.getAbsolutePath() : "Tidak ada gambar";
+
+            // Add new row to the table with ID, Name, Age, and Image Path
+            tableModel.addRow(new Object[]{id, name, age, imagePath});
+            clearFields();
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(frame, "umur harus berupa angka valid!", "Input Error", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(frame, "terjadi kesalahan : " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
